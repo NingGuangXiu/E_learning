@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="650dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        android:orientation="vertical"
+        android:background="@drawable/timg4">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="380dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:paddingTop="18dp"
+            android:paddingLeft="30dp"
+            android:text="欢迎使用 E-learning!"
+            android:textStyle="italic"
+            android:textColor="@color/red"
+            android:typeface="serif"
+            android:textSize="36dp" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="250dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="80dp"
+            android:text="登录"
+            android:typeface="serif"
+            android:background="@color/lightblue"
+            android:textSize="31dp"/>
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="250dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="80dp"
+            android:text="注册"
+            android:typeface="serif"
+            android:background="@color/lightblue"
+            android:textSize="31dp"/>
+
+        <LinearLayout
+            android:layout_width="410dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="100dp">
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="80dp"
+                android:background="@color/transparent"
+                android:text="微信登录"
+                android:textColor="@color/darkblue"
+                android:textSize="20dp"
+                android:typeface="serif" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="80dp"
+                android:background="@color/transparent"
+                android:text="QQ登录"
+                android:textColor="@color/darkblue"
+                android:textSize="20dp"
+                android:typeface="serif" />
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="110dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="80dp"
+                android:background="@color/transparent"
+                android:text="手机号登录"
+                android:textColor="@color/darkblue"
+                android:textSize="20dp"
+                android:typeface="serif" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

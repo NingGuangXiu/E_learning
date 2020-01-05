@@ -47,19 +47,15 @@ public class register1 extends AppCompatActivity {
                 final String str3= confirm_psd.getText().toString().trim();
 
                 if(str.isEmpty()){
-                    flag=false;
                     showDialog_1();
                 }
                 else if(str1.isEmpty()){
-                    flag=false;
                     showDialog_2();
                 }
                 else if(str2.isEmpty()){
-                    flag=false;
                     showDialog_3();
                 }
                 else if(str3.isEmpty()){
-                    flag=false;
                     showDialog_4();
                 }
 
@@ -68,8 +64,9 @@ public class register1 extends AppCompatActivity {
 
                 for (int i = 0; i<Datas.User_id.length; i++){
                     if (str.equals(Datas.User_id[i])||str.equals("")||str1.equals("")||str2.equals("")||str3.equals("")){
+
+//                        Toast.makeText(register1.this,"用户已存在",Toast.LENGTH_SHORT).show();
                         flag = false;
-                        Toast.makeText(register1.this,"用户已存在",Toast.LENGTH_SHORT).show();
                         break;
                     }
                     else {

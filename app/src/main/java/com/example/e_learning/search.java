@@ -161,7 +161,7 @@ public class search extends AppCompatActivity {
                 key = position + 1;
 
                 //这里处理条目的点击事件，该干嘛干嘛，跳转的就跳转...
-                Toast.makeText(search.this,"你点击的是第" + key + "个条目",Toast.LENGTH_SHORT).show();
+//                Toast.makeText(search.this,"你点击的是第" + key + "个条目",Toast.LENGTH_SHORT).show();
                 Intent  intent = new Intent(search.this,book.class);
 
                 Bundle bundle = new Bundle();

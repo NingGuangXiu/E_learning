@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".book_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/chapter_title"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="第一章：UI界面"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/chapter_content"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="textView是用来显示字符串的组件，在手机上就是显示一块文本的区域。向用户显示文本，并可选
+择允许他们编辑文本。TextView是一个完整的文本编辑器，但是基类为不允许编辑；其子类EditText允许文本编辑。允许用户复制部分或全部内容，将其粘贴到别的地方，设置XML属性Android:textisselectable ：“真” 或设置相关方法 settextisselectable 为“真”。textisselectable flag 允许用户在TextView选择手势，从而触发系统内置的复制/粘贴控件。"
+            android:textColor="@color/black"
+            android:textSize="22dp" />
+    </LinearLayout>
+</LinearLayout>

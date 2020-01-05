@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,17 +10,26 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/timg1"
         android:orientation="vertical">
+        android:theme="@android:style/Theme.Translucent"
 
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:layout_marginLeft="15dp"
-            android:text="用户登录"
-            android:textColor="@color/darkred"
-            android:textSize="30dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:background="@color/mediumseagreen"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="376dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:text="用户登录"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="30dp"
+                app:fontFamily="cursive" />
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="405dp"
@@ -34,19 +44,21 @@
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="70dp"
                 android:text="帐号"
+                android:textColor="@color/royalblue"
                 android:textSize="30dp" />
 
             <EditText
-                android:id="@+id/editText4"
+                android:id="@+id/username"
                 android:layout_width="250dp"
                 android:layout_height="50dp"
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="80dp"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:text="请输入帐号"
+                android:text=""
                 android:textColor="@color/gray"
-                android:textSize="32dp" />
+                android:textSize="32dp"
+                android:visibility="visible" />
         </LinearLayout>
 
         <LinearLayout
@@ -61,16 +73,18 @@
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="50dp"
                 android:text="密码"
+                android:textColor="@color/royalblue"
                 android:textSize="30dp" />
 
             <EditText
-                android:id="@+id/editText5"
+                android:id="@+id/password"
                 android:layout_width="250dp"
                 android:layout_height="50dp"
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="50dp"
                 android:ems="10"
-                android:inputType="textPassword" />
+                android:inputType="textPassword"
+                tools:visibility="visible" />
         </LinearLayout>
 
         <Button
@@ -79,20 +93,11 @@
             android:layout_height="70dp"
             android:layout_marginLeft="100dp"
             android:layout_marginTop="50dp"
-            android:background="@color/steelblue"
+            android:background="@drawable/wechat_shape"
             android:text="登录"
+            android:textColor="@color/white"
             android:textSize="32dp" />
-
-        <Button
-            android:id="@+id/button8"
-            android:layout_width="100dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="300dp"
-            android:layout_marginTop="20dp"
-            android:background="@color/transparent"
-            android:text="忘记密码"
-            android:textColor="@color/darkblue" />
 
     </LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

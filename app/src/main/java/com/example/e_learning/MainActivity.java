@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v){
 
                 Intent intent=new Intent();
-                intent.setClass(MainActivity.this , course.class);
+                intent.setClass(MainActivity.this , wechat_login.class);
                 startActivity(intent);
             }
 
@@ -60,24 +60,12 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v){
 
                 Intent intent=new Intent();
-                intent.setClass(MainActivity.this , course.class);
+                intent.setClass(MainActivity.this , qq_login.class);
                 startActivity(intent);
             }
 
         });
 
-        Button button7=null;
-        button7 = (Button) findViewById(R.id.button7);
-        button7.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-
-                Intent intent=new Intent();
-                intent.setClass(MainActivity.this , course.class);
-                startActivity(intent);
-            }
-
-        });
 
     }
 }

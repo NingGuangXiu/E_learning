@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".qq_login">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center"
+        android:background="@color/mediumseagreen"
+        android:text="QQ登录"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        />
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="150dp"
+        android:src="@drawable/touxiang1"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+        android:text="检测到该帐号，是否授权登录?"
+        android:textSize="23dp"
+        android:textColor="@color/red"
+        />
+    <Button
+        android:id="@+id/qq_login_button"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="80dp"
+        android:text="授权登录"
+        android:textSize="28dp"
+        android:background="@drawable/wechat_shape"
+        android:textColor="@color/white"
+        />
+
+
+</LinearLayout>
